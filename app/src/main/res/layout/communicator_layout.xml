@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/vpName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="From: VP Name" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dip" />
+
+    <TableLayout
+        android:id="@+id/tableLayoutActivity1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ligth_gray"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <!--HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" -->
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:padding="0dip">
+
+            <!--LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"></LinearLayout-->
+
+            <Button
+                android:id="@+id/textView1"
+                android:text="Serial No" />
+
+
+
+            <Button
+                android:id="@+id/button1"
+                android:text="CGI Employee" />
+
+            <Button
+                android:id="@+id/buttonTiago"
+                android:text="Task/Status" />
+
+            <Button
+                android:id="@+id/buttonTiago2"
+                android:text="Email/SMS" />
+
+            <!--Button
+                    android:id="@+id/buttonTiago3"
+                    android:text="Column 5" />
+
+                <Button
+                    android:id="@+id/buttonTiago4"
+                    android:text="Column 6" />
+
+                <Button
+                    android:id="@+id/buttonTiago5"
+                    android:text="Column 7" /-->
+        </TableRow>
+        <!--/HorizontalScrollView-->
+
+
+        <!-- just draw a red line -->
+
+        <View
+            android:layout_height="2dip"
+            android:background="@color/black" />
+
+        <!-- 3 columns -->
+
+        <!--TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:text="Column 1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Button
+                android:id="@+id/button2"
+                android:text="Column 2" />
+
+            <Button
+                android:id="@+id/button3"
+                android:text="Column 3" />
+            
+            <Button
+                android:id="@+id/button4"
+                android:text="Column 4" />
+            
+            <Button
+                android:id="@+id/button5"
+                android:text="Column 5" />
+        </TableRow-->
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonAddRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Row" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Message" />
+
+</LinearLayout>
